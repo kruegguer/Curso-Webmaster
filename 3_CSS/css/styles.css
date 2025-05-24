@@ -1,0 +1,40 @@
+body{
+    padding-bottom: 500px;
+}
+
+
+/*comentário*/
+h2{
+    color:red;
+}
+
+/*Classes*/
+
+.paragraph{
+    background-color: #e3e2e2;
+    color: rgb(59, 25, 253);
+    font-size: 20px;
+}
+
+/* Id's*/
+
+#header{
+    color: #1e3;
+    font-size: 40px;
+}
+
+/*Ordem do CSS*/
+
+h2{
+    border-bottom: 2px solid red;
+}
+
+#algum-titulo{
+    color: aqua;
+    border-bottom: solid 5px orange;
+}
+
+.titulo{
+    color:black;
+    border-bottom: solid 4px blue;
+}

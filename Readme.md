@@ -73,4 +73,78 @@
 
     1. A tag div é utilizada para criar divisões/seções no nosso site;
     2. Podemos criar elementos menores também, como cards;
-    3. O principal propósito é: encapsular elementos que estão conectados entre si;
+    3. O principal propósito é: encapsular elementos que estão conectados entre si; 
+
+
+            CSS
+
+=> Maneiraas de Adicionar o CSS
+
+    1. Temos algumas maneiras de adicionar CSS ao HTML;
+    2. Inline: quando os estilos são adicionados por um atributo;
+    3. Internal: quando o css é adicionado na tag head;
+    4. External: quando o css é adicionado através de um arquivo externo, e depois importado ao HTML;
+    5. Vamos sempre optar pelo external CSS;
+
+=> A Anatomia do CSS
+
+    1. Com CSS aplicamos CSS a um elemento;
+    2. Primeiramente devemos selecionar o elemento, isso pode ser feito através da tag do elemento;
+    3. Depois precisamos colocar as propriedades e os valores;
+    4. Se quisermos mudar a cor de algo, utilizamos: color: red;
+
+    -> external CSS
+        1. Para adicionar CSS com esta tecnica precisamos criar arquivo .css;
+        2. Geralmente ele ficam numa pasta chamada css;
+        3. E nós o importamos através da tag link;
+            ex: <link rel="stylesheet" href="caminho do arquivo css">
+        4. As regras que estão no arquivos são aplicadas no html;
+
+=> Ordem do CSS
+
+    1. O CSS é carregado a partir de uma ordem;
+    2. Ordem: inline > internal = external > padrão do navegador;
+    3. Esta regra funciona quando temos estilos em um mesmo elemento;
+    4. Interno e externo tem a mesma propriedade, a ultima regra ganha "corrida";
+
+=> Múltiplos arquivos de CSS
+
+    1. É possível ter mais de uma folha de estilo no nosso projeto;
+    2. Precimos apenas importar todas elas na tag head;
+    3. Os arquivos importados por último tem mais prioridade;
+    4. Esta é uma boa pratica, pois possibilita a divisão de CSS por páginas, por exemplo;
+
+=> Comentário CSS
+
+    1. A sintaxe é: /*comentário*/;
+
+=> Classes e ID'S
+
+    1. Classes e id's são atributos de tags do HTML, mas estão diretamente relacionados ao CSS;
+    2. Podemos especificar elementos específico com eles;
+    3. Id's são utilizados para elementos únicos - Os id's podem sobrescrever as classes. Eles possuem um valor semântico maior;
+    4. Classes servem para um ou mais elementos , geralmente utilizadas em conjuntos de elemantos;
+
+    -> Classes
+
+        1. As classes são inseridas através de um atributo de HTML;
+        2. O valor do atributo é o nome da classe, e também uma escolha nossa;
+        3. Por exemplo: temos um botão que aparece x vezes no nosso projeto, podemos colocar uma classe btn nele, ou seja, os padrões de estilo desses botôes podem ser transmitidos através desta classe para os demais;
+        4. O seletor fica: .<nome_da_classe>;
+    
+    -> ID'S
+
+        1. Os id's também são atributos do Html;
+        2. Podemos escrever qualquer coisa como valor, será o nome do id;
+        3. Id's são únicos, ou seja, não repetimos o mesmo nome na mesma página;
+        4. O HTML não nos proíbe disso, mas é uma má prática e deve ser evitada;
+        5. O seletor fica: #<nome_do_id>;
+
+    -> Ordem dos Seletores
+
+        1. Nós aprendemos sobre o seletor de id e classe;
+        2. E se a tag estiver com id e uma classe, o que acontece?;
+        3. Como nas maneiras de adicionar o css, temos também uma ordem;
+        4. Ordem: Id > Classe > seletor de tag;
+        5. Então o id vai vencer de todos os outros, utilize isso ao seu favor;
+        6. Regras que não entram em conflito serão aplicadas normalmente;
