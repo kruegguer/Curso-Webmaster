@@ -92,3 +92,54 @@ body{
     background-color: rgba(90, 120, 20, .2);
     color: #000000;
 }
+
+/* bg image */
+
+.bg-image{
+    background-image: url("../img/Spfc\ 1.jpg");
+    padding: 10px;
+    color: #FFF;
+}
+
+/* Centralizando img - bg */
+
+.not-centered-bg,
+.centered-bg{
+    height: 500px;
+    width: 500px;
+    background-image: url("../img/Spfc\ 2.jpg");
+    margin-bottom: 20px;
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+/* Largura e Altura */
+
+.height-width{
+    width: 100px;
+    height: 300px;
+    background-color: #abc528;
+    margin: 5px;
+}
+
+.heigth-width-2{
+    height: 300px;
+    background-color: #1e3;
+}
+
+/* Padding */
+
+.not-padding{
+    background-color: #6d6d6d;
+    color: #fff;
+    margin: 5px;
+}
+
+.padding{
+    background-color: #fc1f1f;
+    color: #fff;
+    padding: 10px;
+}

@@ -78,7 +78,7 @@
 
             CSS
 
-=> Maneiraas de Adicionar o CSS
+=> Maneiras de Adicionar o CSS
 
     1. Temos algumas maneiras de adicionar CSS ao HTML;
     2. Inline: quando os estilos são adicionados por um atributo;
@@ -123,7 +123,7 @@
     1. Classes e id's são atributos de tags do HTML, mas estão diretamente relacionados ao CSS;
     2. Podemos especificar elementos específico com eles;
     3. Id's são utilizados para elementos únicos - Os id's podem sobrescrever as classes. Eles possuem um valor semântico maior;
-    4. Classes servem para um ou mais elementos , geralmente utilizadas em conjuntos de elemantos;
+    4. Classes servem para um ou mais elementos, geralmente utilizadas em conjuntos de elementos;
 
     -> Classes
 
@@ -174,7 +174,7 @@
         3. RGB
 
             3.1. RGB significa Red, Blue e Green;
-            3.2. Nós precisamos inserir a intencidade de cada tom, como valores de 0 a 2555;
+            3.2. Nós precisamos inserir a intencidade de cada tom, como valores de 0 a 255;
             3.3. 0 é o mais escuro e 255 é o mais claro;
             3.4. Aplicamos RGB com a seguinte sintaxe: rgb(0-255, 0-255, 0-255);
             3.5. O primeiro valaor representa o tom de vermelho, depois o de verde e por fim o de azul;
@@ -191,7 +191,7 @@
 => Background color
 
     1. Quase todo elemento tem um background, e podemos mudar a cor dele;
-    2. Todas as regras que vimos sobre cires podem ser aplicadas em cores de background;
+    2. Todas as regras que vimos sobre cores podem ser aplicadas em cores de background;
     3. A regra é: background-color: "cor";
     4. As regras de cor de fundo e cor de fonte podem ser utilizadas juntas;
 
@@ -204,6 +204,37 @@
 
 => Resolvendo o problema de opacidade
 
-    1. Se você não quer aplicar a opacidade para os elementos filhos, precisa utilizat o RGBA em vez de opacity;
+    1. Se você não quer aplicar a opacidade para os elementos filhos, precisa utilizar o RGBA em vez de opacity;
     2. Alterando o valor de alpha temos a opacidade colocada apenas na cor de fundo;
     3. Então preservamos o conteúdo e alteramos o background;
+
+=> Background Images
+
+    1. Podemos inserir imagens no background dos elementos;
+    2. A regra é: background-color: url("pastaimage.jpg");
+    3. Geralmente a imagem fica em outra pasta, então temos que voltar um diretório;
+    4. Isso pode ser feito com o símbolo:..;
+
+=> Centralizando a imagem de background
+
+    1. As vezes a imagem é muito mais que o elemento que estamos inserindo, então precisamos melhorar a visualização, centralizando a imagem;
+    2. Isso pode ser feito com duas regras: background-position com o valor de center e background-size com o valor de cover;
+
+=> Box Model
+
+    1. Box Model é uma entidade que é criada em todo elemento fo HTML;
+    2. Ela consiste ela consiste em quatro partes: Altura e Largura, Padding, Border e Margin;
+    3. Todas elas podem ser alteradas por CSS;
+    4. Alguns elemento do HTML já vem com valor nestas regras;
+
+    -> Height and Width
+
+        1. A altura e a largura são o core do box model;
+        2. Estas propriedades consistem no conteúdo do elemento;
+        3. Podemos alterar as duas e mudae o tamanho do elemento na tela;
+        4. Alguns elementos do HTML, os block elements, já vem com 100% de largura, preenchendo a tela toda na horizontal;
+    
+    -> Padding
+
+        1. é o espaço entre o conteúdo e a borda do elemento, també conhecido como espaçamento interno;
+        2. Este recurso é utilizado para criar uma distância entre o conteúdo (texto) e a extremidade do elemento;
