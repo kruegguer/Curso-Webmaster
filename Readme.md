@@ -222,8 +222,8 @@
 
 => Box Model
 
-    1. Box Model é uma entidade que é criada em todo elemento fo HTML;
-    2. Ela consiste ela consiste em quatro partes: Altura e Largura, Padding, Border e Margin;
+    1. Box Model é uma entidade que é criada em todo elemento do HTML;
+    2. Ela consiste em quatro partes: Altura e Largura, Padding, Border e Margin;
     3. Todas elas podem ser alteradas por CSS;
     4. Alguns elemento do HTML já vem com valor nestas regras;
 
@@ -231,10 +231,57 @@
 
         1. A altura e a largura são o core do box model;
         2. Estas propriedades consistem no conteúdo do elemento;
-        3. Podemos alterar as duas e mudae o tamanho do elemento na tela;
+        3. Podemos alterar as duas e mudar o tamanho do elemento na tela;
         4. Alguns elementos do HTML, os block elements, já vem com 100% de largura, preenchendo a tela toda na horizontal;
     
     -> Padding
 
-        1. é o espaço entre o conteúdo e a borda do elemento, també conhecido como espaçamento interno;
+        1. é o espaço entre o conteúdo e a borda do elemento, também conhecido como espaçamento interno;
         2. Este recurso é utilizado para criar uma distância entre o conteúdo (texto) e a extremidade do elemento;
+    
+    -> Padding Individual
+
+        1. Podemos adicionar o padding aos lados individuais de um elemento;
+        2. A regra é: padding - *;
+        3. Onde * pode ser top, left, right ou bottom;
+        4. Assim teremos valores customizados em cada um dos lados do elemento;
+    
+    -> Shorthand Properties
+
+        1. As propriedades de shorthand nos permitem adicionar padding a todas as direções com uma regra;
+        2. Apenas precisamos utilizar a regra padding, e configurar top, right, bottom e left nesta ordem;
+        3. Exemplo: padding: 10px 5px 12px 30px;
+        4. Esta regra de shorthand pode ser aplicada para outras propriedades, como a margin;
+    
+    -> Padding e Width
+
+        1. A padding é adicionada a largura do elemento, e isso pode ser um problema;
+        2. Por exemplo: se precisamos seguir um layout perfeitamente, um elemento com 200px de with e 25px de padding tem um tamanho total de 250px na horizontal;
+        3. Podemos diminuir a largura do elemento, mas isso dificulta o calculo também;
+        4. Isso pode ser resolvido com a regra box-sizing e o valor border-box, isso faz o elemento respeitar o tamanho que está em with;
+
+    -> Border
+        
+        1. A borda é o elemento central, fica entre padding e margin;
+        2. Padding é o espaçamento interno e margin o externo;
+        3. Geralmente esta regra é utilizada com o propósito decorativo;
+        4. A regra de border é definida em algumas partes: tamanho, aspecto e cor da borda;
+    
+    -> Border Individual
+        
+        1. Podemos adicionar borda aos lados especificos de um elemento também;
+        2. Podemos utilizar border- *, onde * pode ser top, right, bottom e left;
+        3. Isso é muito utilizado frequentemente, especialmente com a border-bottom e left;
+
+    -> Border arredondada
+
+        1. Com a propriedade border-radius podemos arredondar os cantos de um elemento;
+        2. Podemos aplica-la assim: border-radius: 5px;
+        3. Isso faz com que o canto seja arredondado em 5px;
+        4. Importante: Podemos arredondar elementos que não tem a regra de border aplicada;
+
+    -> Margin
+
+        1. A propriedade de margin é responsável pelo espaçamento externo do elemento;
+        2. Podemos aplicar o recurso como aplicamos o padding, ou seja: lados individuais e também o shorthand;
+    

@@ -143,3 +143,105 @@ body{
     color: #fff;
     padding: 10px;
 }
+
+/* Padding individual */
+
+.padding-individual{
+    background-color: #6d6d6d;
+    color: #fff;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+/* Shorthand Properties */
+
+.shorthand-properties{
+    background-color: #333;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 15px 20px 25px;
+}
+
+.shorthand-properties-2{
+    background-color: #fc1f1f;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+/* PADDIND-WIDTH */
+
+.without-border-box{
+    background-color: #333;
+    color: #fff;
+    font-size: 40px;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #fc1f1f;
+    color: #fff;
+    font-size: 40px;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* BORDER */
+
+.border-1{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 20px;
+}
+
+.border-2{
+    border: 1px dotted #4e6a5b;
+    padding: 25px;
+}
+
+/* Border individual */
+
+.border-ind{
+    border-left: 2px solid red;
+    background-color: #6d6d6d;
+    padding: 10px;
+}
+
+.border-ind-2{
+    border-bottom: 5px double #1e3;
+    background-color: #fc1f1f;
+    padding: 15px;
+    margin: 5px;
+}
+
+/* Borda Arredondada */
+
+.rounded-p{
+    border: 2px solid #1eff87 ;
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.rounded-p-2{
+    background-color: #6d6d6d;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* Box model juntos */
+
+.box-model{
+    padding: 25px 30px;
+    border: 2px solid #abc528;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
