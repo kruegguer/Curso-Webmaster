@@ -284,4 +284,109 @@
 
         1. A propriedade de margin é responsável pelo espaçamento externo do elemento;
         2. Podemos aplicar o recurso como aplicamos o padding, ou seja: lados individuais e também o shorthand;
+
+=> Alinhamento de texto
+
+    1. Nossos textos podem ser alinhados em várias direções;
+    2. Por padrão ele é alinhado a esquerda;
+    3. Porém com a regra text-align configutamos center (centro) ou right (direita), para alterar o valor default;
+    4. Usamos muito o valor de center;
+
+=> Decorando textos
+
+    1. Com a tag text-decoration podemos adicionar efeitos ao texto;
+    2. É possével colocar um undeline ou até mesmo uma linha que corta o texto;
+    3. Esta regra é utilizada em casos específicos;
+    4. A tag "a" tem um underline por padrão, podemos remover isso com a regra de text-decoration e o valor de none;
+
+=> Espaçamento de letras
+
+    1. Com a regra letter-spacing podemos alterar o espaçamento entre as letras de um texto;
+    2. Isso é interessante em situações que o layout pede esta mudança;
+    3. A regra é aplicada da seguinte maneira: letter-spacing: 5px;
+
+=> Fontes
+
+    1. Com CSS podemos alterar o tipo da fonte, com a regra font-family;
+    2. As regras disponiveis são: Serif, Sans-serif, Monospace, Cursive e Fantasy;
+    3. Todos os navegadores tem várias fontes que podemos utilizar, e ainda podemos adicionar fontes externas, por exemplo com o Google Fonts;
+
+=> Estilo de fonte
+
+    1. Nós podemos utilizar a propriedade font-style para mudar o aspecto das letras;
+    2. Os valores são: normal, italic e oblique;
+    3. Normal é valor default, e os outros as variantes;
+    5. Oblique é como o tipo italico, com pequenas diferenças;
+
+=> Font weight
+
+    1. A propriedade font-weight pode deixar nossa fonte de texto mais fina ou mais grossa;
+    2. Os valores vão de 100 a 900. sendo 100 o mais fino;
+    3. Algumas palavreas também funcionam como valores, por exemplo: bold(600);
+    4. Existem fontes que não tem todas as variações, devemos tomar cuidado com isso; 
+
+=> Tamanho de fonte
+
+    1. A regra de font-size é responsável por deixar a nossa fonte grande ou pequena;
+    2. Quanto menor o valor, menor a fonte e vice-versa;
+    3. Esta regra é configurada com unidades de medida, como o px;
+
+=> Display
+
+    1. Em HTML e CSS temos alguns elementos que são considerado de bloco e outros inline;
+    2. A tag div é um exemplo de block e span um exemplo de inline;
+    3. Com a regra display podemos mudar este comportamento, ou seja, deixar uma div como inline;
+    4. block: Ocupa a linha toda e os elementos quebram linha quando adicionando novos elementos block;
+    5. Inline: Os elemento ficam um do lado do outro;
+
+=> Escondendo elementos
+
+    1. Existem situações que precisamos ocultar elementos;
+    2. Basta adicionar a regra display com o valor none, então o elemento não é mais exibido, porém ainda consta no HTML;
+
+=> Positions
+
+    1. A regra position e seus valores são responsáveis por posionar o elemento na tela;
+    2. Temos algumas possibilidades: relative, fixed, absolute, sticky e mais;
+    3. O valor padrão é static, todo elemento começa com esta posição;
+    4. Esta regra é essencial quando precisamos mudar onde o elemento deve dicar no projeto;
+
+    -> Position Static
+
+        1. O valor de static na position não faz nada com o elemento, porque este é o valor padrão, ou seja, todo elemento já tem este tipo de positin;
+        2. Outros valores são afetados pelas regras: top, right, bottom e left, porém static não;
+        3. Static apenas segue o fluxo do HMTL;
     
+    -> Position Relative
+
+        1. Com a position configurada como relative temos mais possibilidades que static;
+        2. Agora as regras top, right, bottom e left, movem o elemento pela tela;
+        3. O elemento ainda segue o fluxo do HTML;
+        4. Atenção: normalmente não utilizamos estas regras de posição com relative;
+    
+    -> Position Absolute
+
+        1. Com o valor de absolute em position, o elemento pode ser movido pela tela toda, ou seja, quebramos o fluxo do HTML;  
+        2. Esta regra também é afetada por top, right, bottom e left;
+        3. Posicionar com absolute pode ser uma solução ou um problema, dependendo do ponto de vista;
+    
+    -> Position Relativo com Absolute
+
+        1. Podemos resolver o problema de absolute com relative;
+        2. Um elemento com position absolute é ligado ao elemento mais próximo com posição relativa, se não ele é ligado ao body;
+        3. Então com um container com posição relative, podemos controlar melhor a área de ação dos elementos com absolute;
+    
+    -> Position Fixed
+
+        1. Com o fixed o elemento pode ser fixado na tela, mesmo após o scroll na página, o elemento permanece na mesma posição;
+        2. O recurso é frequentemente utilizado para criar barra de navegação fixa;
+    
+    -> Position Sticky
+
+        1. Sticky também faz o elemento fixar na tela, mas tem um outro comportamento também, quando o elemento volta para a sua posição original ele comporta como relative;
+        2. A posição do elemento é onde ele foi inserido no HTML;
+    
+    -> Position z-index
+
+        1. Se temos dois elementos com as mesmas posições ou se eles colidem na página, podemos escolher qual será exibido;
+        2. Utilizamos o z-index para isso, o elemento com maior valor prevalece;
