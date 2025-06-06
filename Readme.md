@@ -390,3 +390,142 @@
 
         1. Se temos dois elementos com as mesmas posições ou se eles colidem na página, podemos escolher qual será exibido;
         2. Utilizamos o z-index para isso, o elemento com maior valor prevalece;
+
+=> Formulários
+
+    1. Forms tem o papel de receber dados do usuário e enviar para o servidor, onde podemos validar dados;
+    2. As tags mais utilizadas são: form, label, input;
+    3. A tag form cria o formulário e o delimita;
+    4. Label descreve os inputs;
+    5. O imput é a tag que inserimos os dados, temos vários tipos: number, email, text e etc;
+    
+    -> Criando um formulário
+
+        1. Para criar um formulário vamos precisar da tag form, que encapsula todos os elementos do formulário;
+        2. Dentro dela temos labels e inputs, mas podemos ter outras tags como divs;
+        3.A tag de input tem um atributo chamado type, que é onde definimos o propósito do input;
+        4. Um input do tipo text, receber dados de texto;
+
+    -> Atributos da tag form
+
+        1. A tag form tem dois atributos geralmente, que são: action e method;
+        2. Action: arquivo/pagina que os dados serão enviados;
+        3. methood: GET (receber dados) ou POST (enviar dados);
+    
+    -> Atributo Name
+
+        1. Utilizamos o atributo name para configurar os nossos inputs;
+        2. o valor é ligado ao próposito do input, a sua categoria;
+        3 Ex: Um input que recebe a idade de um usuário, pode ter um name com o valor de age/idade;
+        4. Este atributo é utilizado para pegar o valor quando form é enviado para o servidor;
+    
+    -> Atributo Label
+
+        1. A tag label tem um atributo, e nós o utlizamos para linkar com um input, o nome do atributo é for;
+        2. O valor deve ser o mesmo que o atributo name do atributo que corresponde aquela label;
+        3. Utilizamos o for por própositos semânticos e isso ajuda o nosso site ser melhor rankeado no GOOGLE;
+    
+    -> Enviando dados de formulário
+
+        1. Podemos enviar os dados do form para o servidor através de um botão de submit;
+        2. O botão também é um input, porém mudamos o type para submit;
+        3. Quando o usário clicar no botão o processamento do form acontece, os dados serão enviados ao servidor através de uma requisição HTTP;
+        4. Aqui é onde precisamos de uma integração com o back-end, para aproveitar os dados do formulário;
+    
+    -> Elemento Select
+
+        1. A tag select tem as opções representadas por tagas de option;
+        2. Select também tem um atributo name;
+        3. O value estará em cada uma das options, e é isso que receberemos no lado do servidor;
+        4. Então temos duas tags para criar um elemento de seleção: select e option;
+
+        -> Atributo selected
+
+            1. Podemos iniciar o nosso input de select com uma opção selecionada;
+            2. Para isso esta option precisa ter o atributo selected;
+            3. Abordagem interessante para quando temos uma opção muito provável;
+
+        -> Múltiplas seleções
+
+            1. Podemos criar um select que nos permite mais de uma option selecionada;
+            2. Interessante quando queremos aceitar um ou mais dados;
+            3. Por exemplo: opicionais de um carro / recheio de um lanche;
+            4. Precisamos apenas inserir o atributo multiple na tag select;
+    
+    -> Elemento de Textarea
+
+        1. A taga é semelhante ao input text;
+        2. Podemos utilizar para textos maiores, por exemplo: A bio do instagram;
+        3. Isso nos permite uma área maior para digitar e verificar o texto que digitamos;
+    
+    -> Fieldset e Legend
+
+        1. Fieldset é uma tag para agrupar inputs e legend é como uma label, que descreve os inputs agrupados;
+        2. Utilizamos esta tag para conectar dois ou mais inputs que tenham o mesmo sentido;
+        3. Por exemplo: nome e sobrenome;
+    
+    -> Datalist
+
+        1. Datalist é como um select, porém com um autocomplete;
+        2. Podemos pesquisar por possíveis valores para preencher o input ou selecionar alguma opção por meio de uma lista;
+        3. As opções são linkadas por um atributo chamado list;
+    
+    -> Input para Senha
+
+        1. Se nós estamos esperando uma senha do usuário, podemos utilizar a tag input, porém no atributo type colocaremos "password" e então o texto passa a ser exibido com *, para mascarar os dígitos;
+    
+    -> Reiniciando o form
+
+        1. Podemos reiniciar todos os campos do form;
+        2. Isso é feito através de um input do tipo reset;
+        3. Ele é botão, que ao ser clicado limpa o form;
+    
+    -> Input Radio
+
+        1. Este input é utilizado para selecionar apenas uma opção de várias possibilidades, por exemplo: O modelo do carro que estamos comprando;
+        2. Não podemos escoher dois, então há uma necessidade da decisão entre uma das opções;
+    
+    -> Input Checkbox
+
+        1. O checkbox é similar ao radio;
+        2. Temos que selecionar uma ou mais opções, e também cancelar a seleção de uma opção, por exemplo: os opcionais de um carro;
+    
+    -> Input de Data
+
+        1. O Input do tipo date é utilizado para selecionar uma data;
+        2. Temos um calendário que nos auxilia para datas passadas ou futuras;
+        3. Podemos também preencher o valor digitando;
+    
+    -> Input para Arquivos
+
+        1. O input de arquivos pode ser criado com o type igual a file;
+        2. Assim podemos enviar um arquivo ao servidor, por exemplo: imagens ou pdfs;
+    
+    -> Input para Números
+
+        1. Configurando o type para number temos um input que só aceita dígitos;
+        2. Este input possui setas, que nos permite alterar o número através de cliques;
+    
+    -> Input para e-mails
+
+        1. O input de e-mail é similar ao de texto, porém quando enviamos o formulário temos uma validação que checa se o texto tem o padrão de um e-mail, verificando o @, por exemplo;
+    
+    -> Atributo Value
+
+        1. Com o value podemos definir um valor ao input alvo, como se o usuário já tivesse preenchido algo;
+        2. É muito utilizado quando temos um valor padrão;
+    
+    -> Atributo Disable
+
+        1. O atributo disabled é utilizado para bloquear um input, então não podemos digitar neste input;
+        2. Útil quando não queremos que o usuário preencha um determinado input;
+
+    -> Atributo Placeholder
+
+        1. Com o atributo placeholder podemos adicionar dicas para os usuário do sistemas, ela será exibida no próprio input;
+        2. Ao começarmos a preencher com algum valor, a dica some e o nosso valor que fica sendo exibido;
+
+    -> Atributo Required
+
+        1. O atributo required força o preenchimento de algum campo, se tentarmos enviar o form sem um valor no campo com required, receberemos uma alerta da página;
+        2. Isto é um tipo de validação;

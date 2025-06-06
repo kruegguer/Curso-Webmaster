@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ATRIBUTOS DO FORMULÁRIO -->
+    <div>
+        <h2>Formulario Html</h2>
+        <form action="register.php" method="POST">
+            <div>
+                <label>Nome:</label>
+                <input type="text">
+            </div>
+            <!-- ATRIBUTO NAME -->
+            <div>
+                <label>Idade:</label>
+                <input type="text" name="age">
+            </div>
+            <!-- ATRIBUTO LABEL -->
+            <div>
+                <label for="age">Idade:</label>
+                <input type="text" name="age">
+            </div>
+            <!-- SELECT -->
+            <div>
+                <label for="job">Escolha sua profissão:</label>
+                <select name="job">
+                    <option value="programador">Programador</option>
+                    <option value="desenvolvedor">Desenvolvedor</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="testr">Tester/QA</option>
+                    <option value="devops">DevOps</option>
+                </select>
+            </div>
+            <!-- ATRIBUTO SELECTED -->
+            <div>
+                <label for="contract">Você leu os termos do contrato?</label>
+                <select name="contract">
+                    <option value="sim" selected>Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <!-- MULTIPLAS OPÇÕES -->
+            <div>
+                <label for="items">Selecione os itens desejados:</label>
+                <select name="items" multiple>
+                    <option value="maca">Maçã</option>
+                    <option value="banana">Banana</option>
+                    <option value="uva">Uva</option>
+                    <option value="laranja">Laranja</option>
+                    <option value="tangerina">Tangerina</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="arroz">Arroz</option>
+                </select>
+            </div>
+            <!-- TEXTAREA -->
+            <div>
+                <label for="comment">Escreva a sua trajetória profissional</label>
+                <textarea name="comment"></textarea>
+            </div>
+            <!-- FIELDSET E LEGEND -->
+            <div>
+                <fieldset>
+                    <legend>Preencha suas informações:</legend>
+                    <label for="firstname">Nome:</label>
+                    <input type="text" name="firstname">
+                    <label for="lastname">Sobrenome:</label>
+                    <input type="text" name="lastname">
+                </fieldset>
+            </div>
+            <!-- DATALIST -->
+            <div>
+                <label for="flavor">Escolha seu sabor:</label>
+                <input type="text" name="flavor" list="flavors">
+
+
+                <datalist id="flavors">
+                    <option value="morango"></option>
+                    <option value="chocolate"></option>
+                    <option value="uva"></option>
+                    <option value="acai"></option>
+                    <option value="cereja"></option>
+                </datalist>
+            </div>
+            <!-- PASSWORD -->
+            <div>
+                <label for="name">Digite seu nome:</label>
+                <input type="text" name="name">
+                <label for="password">Digite sua senha:</label>
+                <input type="password" name="password">
+            </div>
+            <!-- RADIO BUTTON -->
+            <div>
+                <label for="car_model">Escolha um modelo de carro:</label>
+                <div class="radio">
+                    <input type="radio" name="car_model" value="bmw">
+                    <label for="bmw">BMW</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="car_model" value="mercedes">
+                    <label for="mercedes">MERCEDES</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="car_model" value="porshe">
+                    <label for="porshe">Porshe</label>
+                </div>
+            </div>
+            <!-- CHECKBOX -->
+            <div>
+                <label for="optionals">Escolha os opcionais do carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="optionals" value="big_tires">
+                    <label for="big_tires">Pneus Grandes</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="optionals" value="turbo_engine">
+                    <label for="turbo_engine">Motor Turbo</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="optionals" value="hybrid">
+                    <label for="hybrid">Hibrido</label>
+                </div>
+            </div>
+            <!-- DATAS -->
+            <div>
+                <label for="birthday">Data de Nascimento:</label>
+                <input type="date" name="birthday">
+            </div>
+            <!-- ENVIANDO ARQUIVOS -->
+            <div>
+                <label for="image">Insira o Arquivo</label>
+                <input type="file" name="image">
+            </div>
+            <!-- INPUT NUMBER -->
+            <div>
+                <label for="salary">Qual sua pretenção salarial?</label>
+                <input type="number" name="salary">
+            </div>
+            <!-- INPUT PARA E-MAIL -->
+            <div>
+                <label for="email">Digite seu e-mail?</label>
+                <input type="email" name="email">
+            </div>
+            <!-- VALUE -->
+            <div>
+                <label for="value">Digite o valor do salário mínimo?</label>
+                <input type="text" name="value" value="1518">
+            </div>
+            <!-- DISABLED -->
+            <div>
+                <label for="disabled">Digite um valor</label>
+                <input type="text" value="não precisa preencher" disabled name="disabled">
+            </div>
+            <!-- PLACEHOLDER -->
+            <div>
+                <label for="curent-job">Qual sua profissão?</label>
+                <input type="text" name="curent-job" placeholder="No que você está trablhando?">
+            </div>
+            <!-- ATRIBUTO REQUIRED -->
+             <div>
+                <label for="full-name">Digite seu nome completo:</label>
+                <input type="text" name="full-name" placeholder="Nome Completo" required>
+             </div>
+            <!-- RESET -->
+            <div>
+                <input type="reset" value="limpar">
+            </div>
+            <!-- ENVIO DE FORM -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
